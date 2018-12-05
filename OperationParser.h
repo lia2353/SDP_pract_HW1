@@ -33,18 +33,26 @@ inline string OperationParser::getOperation() const
 //if "exit" program will end in main's while clause
 inline void OperationParser::doOperation()
 {
-	if (operation == "create")
-	{
-		create();
-	}
-	else if (operation == "sequentialSearch")
-	{
-		sequentialSearch();
-	}
-	else
-	{
-		operation = "exit";
-	}
+    if (operation == "create")
+    {
+	create();
+    }
+    else if (operation == "sequentialSearch")
+    {
+	sequentialSearch();
+    }
+    else if (operation == "update")
+    {
+        update();
+    }
+    else if (operation == "delete")
+    {
+        deletest();
+    }
+    else
+    {
+	operation = "exit";
+    }
 }
 
 istream& operator>>(istream& is, OperationParser& parcer)
