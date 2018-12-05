@@ -7,7 +7,6 @@
 
 using namespace std;
 
-/*
 void create()
 {
     ofstream file;
@@ -25,7 +24,6 @@ void create()
     file.close();
     return;
 }
-*/
 
 void sequentialSearch()
 {
